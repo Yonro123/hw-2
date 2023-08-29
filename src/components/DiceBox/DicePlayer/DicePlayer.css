@@ -1,0 +1,29 @@
+.DicePlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  color: white;
+  transition: all 0.5s ease;
+}
+.DicePlayer h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.DicePlayer span {
+  margin-bottom: 250px;
+  color: hsl(31, 96%, 48%);
+  font-size: 60px;
+}
+.DicePlayer.hide {
+  background-color: hsl(30, 82%, 65%);
+}
+.DicePlayer.active {
+  opacity: 1;
+  background-color: hsla(0, 0%, 100%, 0.562);
+}
+.DicePlayer.winner {
+  background-color: hsl(0, 0%, 18.4%);
+}

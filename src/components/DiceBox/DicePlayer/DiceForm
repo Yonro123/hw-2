@@ -1,0 +1,18 @@
+import DicePlayer from "./DicePlayer";
+export default function DiceForm({ players }) {
+  return (
+    <>
+      {players.map((player) => {
+        return (
+          <DicePlayer
+            title={player.name}
+            count={player.count}
+            randomPoint={player.randomPoint}
+            isActivePlayer={player.turn}
+            isWinner={player.winner}
+          />
+        );
+      })}
+    </>
+  );
+}

@@ -1,0 +1,32 @@
+.DiceButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+  padding-bottom: 70px;
+  z-index: 9;
+}
+.ButtonBox {
+  display: flex;
+  gap: 10px;
+  padding: 5px 10px;
+  color: black;
+  background-color: #ffffffcb;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.svgDice {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 100px;
+}
+.svgDice svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
