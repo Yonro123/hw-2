@@ -1,7 +1,6 @@
 import { Button } from "@chakra-ui/react";
 
 import "./ButtonRoll.css";
-import { useState } from "react";
 
 export default function ButtonRoll({
   setRandomPoint,
@@ -12,12 +11,11 @@ export default function ButtonRoll({
   const randomGenerateNumber = () => {
     const newPlayers = [...players];
     const random = Math.trunc(1 + Math.random() * (6 + 1 - 1));
-    newPlayers.map((player) => {
+    newPlayers.forEach((player) => {
       if (player.turn) {
         player.randomPoint += random;
       }
       if (random === 1) {
-        setRandomPoint(random);
         player.randomPoint = 0;
         player.turn = !player.turn;
       }

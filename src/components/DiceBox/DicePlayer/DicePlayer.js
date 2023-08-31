@@ -1,4 +1,4 @@
-import RandomBox from "./RandomBox/RandomBox";
+import CurrentPointBox from "./CurrentPointBox/CurrentPointBox";
 
 import "./DicePlayer.css";
 
@@ -17,7 +17,7 @@ export default function DicePlayer({
     >
       <h2>{title}</h2>
       <span>{count}</span>
-      <RandomBox randomPoint={randomPoint} />
+      <CurrentPointBox randomPoint={randomPoint} />
     </div>
   );
 }

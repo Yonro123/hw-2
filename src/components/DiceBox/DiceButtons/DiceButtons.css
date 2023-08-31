@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 60px 0;
-  padding-bottom: 70px;
+  padding: 50px 0;
+  padding-bottom: 80px;
   z-index: 9;
 }
 .ButtonBox {
@@ -23,7 +24,7 @@
 .svgDice {
   width: 100px;
   height: 100px;
-  margin-bottom: 100px;
+  flex-grow: 1;
 }
 .svgDice svg {
   width: 100%;

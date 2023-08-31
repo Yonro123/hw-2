@@ -25,6 +25,8 @@ const DiceBox = () => {
     },
   ]);
 
+  let defaultPlayerSettings = Object.assign([], players);
+
   return (
     <div className="DiceBox">
       {players.map((player) => {
@@ -39,7 +41,11 @@ const DiceBox = () => {
           />
         );
       })}
-      <DiceButtons players={players} setPlayers={setPlayers} />
+      <DiceButtons
+        players={players}
+        setPlayers={setPlayers}
+        defaultPlayerSettings={defaultPlayerSettings}
+      />
     </div>
   );
 };

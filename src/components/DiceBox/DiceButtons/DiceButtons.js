@@ -13,7 +13,11 @@ import ButtonLeave from "./ButtonLeave/ButtonLeave";
 
 import "./DiceButtons.css";
 
-export default function DiceButtons({ players, setPlayers }) {
+export default function DiceButtons({
+  players,
+  setPlayers,
+  defaultPlayerSettings,
+}) {
   const [randomPoint, setRandomPoint] = useState(0);
   const [isDisabled, setIsDisabled] = useState(false);
   const arrIcons = [
@@ -26,7 +30,11 @@ export default function DiceButtons({ players, setPlayers }) {
   ];
   return (
     <div className="DiceButtons">
-      <ButtonNewGame setPlayers={setPlayers} setIsDisabled={setIsDisabled} />
+      <ButtonNewGame
+        setPlayers={setPlayers}
+        setIsDisabled={setIsDisabled}
+        defaultPlayerSettings={defaultPlayerSettings}
+      />
       <div className="svgDice">{arrIcons[randomPoint - 1]}</div>
       <ButtonRoll
         setPlayers={setPlayers}
